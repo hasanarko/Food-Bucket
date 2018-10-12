@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SearchActivity">
+
+
+    <AutoCompleteTextView
+        android:id="@+id/actv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:completionThreshold="1"
+        android:drawableLeft="@drawable/ic_search_black_24dp"
+        android:hint=" search cuisines,dish or restaurants..." />
+
+
+
+
+    <RadioGroup
+        android:id="@+id/filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/three"
+            android:text="popular restaurants"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+            <RadioButton
+                android:id="@+id/one"
+                android:text="high to low cost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <RadioButton
+                android:id="@+id/two"
+                android:text="low to high cost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+
+
+    </RadioGroup>
+
+
+</LinearLayout>

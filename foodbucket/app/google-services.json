@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "769280928145",
+    "firebase_url": "https://foodbucket-e527a.firebaseio.com",
+    "project_id": "foodbucket-e527a",
+    "storage_bucket": "foodbucket-e527a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769280928145:android:eb965c82f4194461",
+        "android_client_info": {
+          "package_name": "com.example.mrcorbin.testing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "769280928145-gaeoi5outj2dm41kuf60hk0sf4478lah.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mrcorbin.testing",
+            "certificate_hash": "35deac3924a91739ceeafa2327e4e93264a7d652"
+          }
+        },
+        {
+          "client_id": "769280928145-07e21lo3qkehn5lheomc0aeiv6kuds5t.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "769280928145-07e21lo3qkehn5lheomc0aeiv6kuds5t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIv0U612iPYnrfRyiz3nmPvvXlWkxwG4M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "769280928145-07e21lo3qkehn5lheomc0aeiv6kuds5t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

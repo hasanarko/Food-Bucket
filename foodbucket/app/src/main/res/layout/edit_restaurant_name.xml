@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Title"
+        android:textSize="30dp"
+        android:textColor="#020202"
+        android:gravity="center"
+
+        android:layout_marginBottom="15dp"
+
+        />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/new_restaurant_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New restaurant name"
+            android:layout_margin="10dp"
+            android:inputType="text"
+            />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/rest_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+
+    <Button
+        android:id="@+id/update_restaurants_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textColor="#ffff"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/update_button"
+        />
+
+
+
+
+</LinearLayout>

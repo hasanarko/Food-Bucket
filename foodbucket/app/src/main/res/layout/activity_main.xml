@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/drawer"
+    android:background="#eae9e9"
+    android:layout_row="1"
+    tools:context=".MainActivity">
+
+
+
+    <!--apps layout-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_margin="10dp"
+        android:background="#eae9e9"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#eae9e9"
+            >
+
+
+            <!--location-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:layout_marginTop="20dp">
+
+
+                <!--title-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your location"
+                    />
+
+
+                <Button
+                    android:id="@+id/location_finder_id"
+                    android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Find nearby retaurants"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="8dp"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/location_finder_style"
+                    />
+
+                <!--location selector-->
+
+
+            </LinearLayout>
+
+
+            <!--search button-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/serach_button_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Search for food, cuisine, restaurant"
+                    android:textAllCaps="false"
+                    android:background="@drawable/searchbar_landingpage"
+                    android:drawableLeft="@drawable/ic_search_black_24dp"
+                    android:gravity="center_vertical"
+                    />
+
+            </LinearLayout>
+
+
+            <!--recomand section-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="30sp">
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Recommend For You"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+
+                        />
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/see_all_recomandation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="see all"
+                        android:textAlignment="textEnd"
+                        android:textColor="#73a74c"
+                        android:textStyle="bold"
+
+                        />
+
+
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recomandation_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    ></android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            <!--cuisines -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Favourite Cusines"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/see_all_cusines"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="see all"
+                        android:textColor="#73a74c"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd"
+
+                        />
+
+
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/cusine_recycleview_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    ></android.support.v7.widget.RecyclerView>
+
+
+            </LinearLayout>
+
+
+            <!--top rated restaurant-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Top rated restaurants"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/see_all_top_rated_rest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="see all"
+                        android:textColor="#73a74c"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd"
+                        />
+
+
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/top_rated_rest_recyc_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    ></android.support.v7.widget.RecyclerView>
+
+
+            </LinearLayout>
+
+            <!--newly opened restaurants-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Newly opened restaurants"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:layout_weight="9"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/see_all_newly_opened_rest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="see all"
+                        android:textColor="#73a74c"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd"
+                        />
+
+
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/new_rest_recyc_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    ></android.support.v7.widget.RecyclerView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Food Bucket"
+                    android:textColor="#82817c"
+
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="30sp"
+                    style="bold"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/footer_title"
+                    android:textColor="#82817c"
+
+                    android:layout_gravity="center_horizontal"
+
+                    style="bold"
+
+
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+    <!--navigation drawer -->
+
+    <android.support.design.widget.NavigationView
+        app:headerLayout="@layout/header"
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:menu="@menu/nav_menu"
+        android:layout_gravity="start"
+        >
+
+
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>

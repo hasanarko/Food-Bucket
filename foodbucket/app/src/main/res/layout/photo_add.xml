@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="#ffff"
+    android:layout_height="500dp">
+
+
+    <Button
+        android:id="@+id/take_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text="take photo"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:drawablePadding="5dp"
+        android:textColor="#ffff"
+        android:drawableLeft="@drawable/ic_photo_camera_black_24dp"
+        android:background="@drawable/photo_picture"
+
+        />
+
+
+
+    <Button
+        android:id="@+id/choose_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+
+        android:layout_marginLeft="20dp"
+        android:drawablePadding="10dp"
+        android:text="chose photo"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:background="@drawable/photo_picture"
+        android:textColor="#ffff"
+        android:drawableLeft="@drawable/ic_add_a_photo_black_24dp"
+
+
+        />
+
+
+
+
+</LinearLayout>

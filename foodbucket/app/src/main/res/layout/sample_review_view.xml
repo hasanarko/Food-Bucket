@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <!--image section-->
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/imageViewId"
+            android:src="@drawable/p_icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--foodie name-->
+            <TextView
+                android:id="@+id/countryNameId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="John"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/followId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="20dp"
+                >
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--rating-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rated: "
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"/>
+
+
+        <TextView
+            android:id="@+id/rated_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_star_black_24dp"
+            android:background="@drawable/rating_badge"
+            android:text="5"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:textColor="#ffff"/>
+
+    </LinearLayout>
+
+    <!--review section-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="All good"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

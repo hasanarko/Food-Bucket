@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    tools:context=".SignupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--add restaurant information-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add a Place"
+                android:layout_margin="10dp"
+                android:textSize="30dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Enter Restaurant Details"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                />
+
+            <!--restaurant name-->
+            <EditText
+                android:layout_margin="10dp"
+                android:id="@+id/restaurantName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Restaurant Name*"/>
+
+
+            <!--email address-->
+            <EditText
+                android:layout_margin="10dp"
+                android:id="@+id/restaurantEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Email Address*"/>
+
+            <!--phone no-->
+            <EditText
+                android:layout_margin="10dp"
+                android:id="@+id/restaurantPhoneNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:hint="Restaurant's Phone Number* (11 digits)"/>
+
+            <!--location address -->
+            <EditText
+                android:layout_margin="10dp"
+                android:id="@+id/restaurantLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Enter Location*"/>
+
+
+        </LinearLayout>
+
+        <!--password-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="@android:color/black"
+                android:text="Password"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+
+            <EditText
+                android:layout_margin="10dp"
+                android:id="@+id/restaurantPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Enter a password"/>
+
+
+        </LinearLayout>
+
+
+        <!--restaurants image-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="@android:color/black"
+                    android:text="Restaurants Image"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="@android:color/black"
+                    android:text="(by default)"
+
+
+                    />
+
+            </LinearLayout>
+
+
+
+            <ImageView
+                android:id="@+id/restaurant_image_id"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/rest"
+
+                />
+
+
+        </LinearLayout>
+
+        <!--are you owner or manager-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="@android:color/black"
+                android:text="Are you the owner or manager ?"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+
+            <RadioGroup
+                android:id="@+id/radiobtn"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/radioOwner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Owner"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/radioManager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp"
+                    android:text="Manager" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+        <!--additional requests-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="@android:color/black"
+                android:text="Additional Requests"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+
+            <EditText
+
+                android:id="@+id/additionRequest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Is there any more information you'd like to add"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/submitRestaurantInfo"
+                android:text="Submit"
+                android:textColor="#ffff"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:onClick="onSubmit"
+                android:background="@drawable/location_finder_style"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

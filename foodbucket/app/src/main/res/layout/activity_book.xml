@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".BookActivity">
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        >
+
+        <!-- Parent liner layout for image -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <!-- Restaurants Profile picture-->
+
+            <ImageView
+                android:orientation="vertical"
+                android:id="@+id/bookthumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:background="#2d2d2d"
+                android:scaleType="centerCrop" />
+
+            <!-- another layout for horizontal view (restaurant name and rating number)-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Restaurants name-->
+                <TextView
+                    android:id="@+id/title_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Restaurant"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="25sp"
+                    style="bold"
+                    />
+
+                <!-- Restaurants rating number badge-->
+                <TextView
+                    android:id="@+id/restaurant_number_rating"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="15sp"
+                    android:layout_margin="10dp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/rating_badge"
+                    android:paddingLeft="14dp"
+                    android:layout_marginRight="100dp"
+
+
+                    />
+
+            </LinearLayout>
+
+            <!-- 3rd linear layout for address-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!-- Restaurants address -->
+                <TextView
+                    android:id="@+id/restaurants_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"/>
+
+
+            </LinearLayout>
+
+
+
+
+            <!-- 4th linearlayout for horizontal (status,time)-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#3f7fff"
+                    android:text="abc" />
+
+                <TextView
+                    android:id="@+id/o"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="   to   " />
+
+                <TextView
+                    android:id="@+id/c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="00" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+                <!-- 5th linearlayout for horizontal (nav buttons)-->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_margin="10dp"
+                    >
+
+
+                    <!-- button for menu-->
+
+                    <Button
+                        android:id="@+id/menu_id"
+                        android:layout_width="55dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/link_button"
+                        android:layout_marginRight="7dp"
+                        android:textSize="12sp"
+                        android:drawableLeft="@drawable/ic_restaurant_menu_black_24dp"
+
+                        android:textAllCaps="false"
+
+                        />
+
+
+                    <!-- button for review section-->
+
+                    <Button
+                        android:id="@+id/rev_id"
+                        android:layout_width="55dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/link_button"
+                        android:layout_marginRight="7dp"
+                        android:drawableLeft="@drawable/ic_rate_review_black_24dp"
+                        android:textSize="12sp"
+                        android:textAllCaps="false"
+
+                        />
+
+                    <!-- button for all photos-->
+
+                    <Button
+                        android:id="@+id/photo_id"
+                        android:layout_width="55dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="7dp"
+                        android:drawableLeft="@drawable/camera"
+                        android:textSize="12sp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/link_button"
+
+                        />
+
+                    <Button
+                        android:id="@+id/share_id"
+                        android:layout_width="55dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="7dp"
+                        android:drawableLeft="@drawable/ic_share_black_24dp"
+                        android:textSize="12sp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/link_button"
+
+                        />
+
+
+                </LinearLayout>
+
+            <!-- 7th linearlayout for vertical (tittle,ratingbar)-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- title-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="false"
+                    android:text="Email Address"
+                    android:layout_margin="10dp"
+                    android:textSize="18dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/restaurant_email_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="false"
+                    android:layout_margin="10dp"
+
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="false"
+                    android:text="contact us"
+                    android:layout_margin="10dp"
+                    android:textSize="15sp"
+                    style="bold"
+
+                    />
+
+                />
+                <!-- restaurants number -->
+                <TextView
+                    android:id="@+id/phonenumber_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="false"
+
+                    android:layout_margin="10dp"
+                    android:textColor="#83e560"
+                    />
+
+                <!-- caller button for calling a restaurant-->
+                <Button
+                    android:id="@+id/calling"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="false"
+                    android:text="Make a call"
+                    android:layout_margin="10dp"
+                    android:textColor="#ffff"
+                    android:background="@drawable/caller_button"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+
+                <!-- 6th linearlayout for vertical (tittle,ratingbar)-->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/stylish_division"
+                    android:layout_margin="10dp"
+
+                    >
+                    <!-- Tittle-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAllCaps="false"
+                        android:text="Rate this place"
+                        android:layout_margin="10dp"
+                        android:textSize="18dp"
+
+                        />
+
+                    <!--<RatingBar-->
+                        <!--android:id="@+id/count_rating"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:rating="0"-->
+                        <!--android:numStars="5"-->
+                        <!--android:stepSize="1"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:progressTint="#3ba04f"-->
+
+                    <!--/>-->
+
+                    <com.hsalf.smilerating.SmileRating
+                        android:id="@+id/smile_rating"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!-- title-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="false"
+                    android:text="Give review about this place"
+                    android:layout_margin="10dp"
+                    android:textSize="18dp"
+
+
+                    />
+                <!-- text area for foodies review-->
+
+                <EditText
+                    android:id="@+id/review_message_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="give review"
+                    android:layout_margin="10dp"
+                    android:inputType="text"
+                    />
+
+                <!-- sending review to restaurants or admin-->
+
+
+                <Button
+                    android:id="@+id/send_review_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="send"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/caller_button"
+                    android:textColor="#ffff"
+
+
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+                <!-- 8th linearlayout for vertical (tittle,ratingbar)-->
+
+
+
+                <!-- 8th linearlayout for vertical (tittle,ratingbar)-->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:background="#bab9b4"
+                 >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="Food Bucket"
+                        android:textColor="#82817c"
+
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="30sp"
+                        style="bold"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

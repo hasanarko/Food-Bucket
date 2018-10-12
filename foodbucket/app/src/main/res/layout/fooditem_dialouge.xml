@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update and Delete food item"
+        android:textSize="25dp"
+        android:textColor="#020202"
+        android:gravity="center"
+
+        android:layout_marginBottom="15dp"
+
+        />
+    <!--foodname-->
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/update_foodname_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/text_foodname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter food name"
+            android:inputType="text" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!--food price-->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/update_food_price_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/text_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter food price"
+            android:inputType="text"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/update_food_details_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/text_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter food details"
+            android:inputType="text"
+
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/update_fooitem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="update food item"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ffff"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:background="@drawable/location_finder_style"
+
+        />
+
+    <Button
+        android:id="@+id/delete_fooditem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="delete food item"
+        android:textColor="#ffff"
+        android:textAllCaps="false"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:background="@drawable/delete_button"
+        />
+
+    <TextView
+        android:id="@+id/food_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

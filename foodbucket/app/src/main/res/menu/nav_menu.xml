@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/username" android:title="Log in required"></item>
+    <item android:id="@+id/db" android:title="dashboard"></item>
+    <item android:id="@+id/add_a_place" android:title="add a place"></item>
+    <item android:id="@+id/signout" android:title="sign out"></item>
+
+</menu>
